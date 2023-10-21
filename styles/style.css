@@ -1,19 +1,3 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-var(--bg-image);
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -40,23 +24,9 @@ var(--bg-image);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 54px;
 }
-/**/
+
 .header {
-  /*
-  border: 2px solid var(--border-color, #000);
-  background: var(--bg-color, #fff);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: grid;
-  grid-template-rows: 2fr min-content 1fr;
-  inline-size: min(100%, 700px);
-  margin-top: clamp(1rem, -0.8944rem + 8.0826vw, 6.38rem);
-  margin-inline: clamp(1rem, -6.8345rem + 33.4272vw, 23.25rem);
-  min-height: 364px;
-  gap: 20px;*/
   border: 2px solid var(--border-color, #000);
   background: var(--bg-color, #fff);
   display: flex;
@@ -68,12 +38,12 @@ var(--bg-image);
   padding-bottom: 20px;
   padding-top: 135px;
   margin-block-start: 100px;
-  margin-block-end: 46px;
+  margin-block-end: 100px;
 }
 
 .header__title {
   color: var(--text-color, #000);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   font-size: clamp(3.065rem, 2.7129rem + 1.5023vw, 4.065rem);
   font-style: normal;
   font-variation-settings: "wght" 400;
@@ -86,7 +56,7 @@ var(--bg-image);
 
 .header__subtitle {
   color: var(--text-color, #000);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
   font-style: normal;
   font-variation-settings: "wght" 400;
@@ -112,7 +82,7 @@ var(--bg-image);
 
 .theme-menu__button {
   color: var(--text-color, #000);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -171,9 +141,6 @@ var(--bg-image);
 .card {
   display: flex;
   flex-direction: column;
-  /* margin-top: clamp(1rem, -0.9366rem + 8.2629vw, 6.5rem);
-  margin-inline: clamp(1rem, -6.8345rem + 33.4272vw, 23.25rem);
-  margin-block-end: clamp(1rem, 0.1655rem + 3.5606vw, 3.37rem);*/
   margin: 0 auto;
   inline-size: min(100%, 700px);
   border: 2px solid var(--border-color, #000);
@@ -181,7 +148,7 @@ var(--bg-image);
   color: var(--title-color, #000);
 }
 
-.imgHolder {
+.img-holder {
   position: relative;
 }
 
@@ -192,7 +159,7 @@ var(--bg-image);
     top: 25px;
     -webkit-text-stroke: 0.5px var(--text-stroke, #fff);
     color: var(--text-color, #000);
-    font-family: "Press Start 2P";
+    font-family: "Press Start 2P", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -211,7 +178,7 @@ var(--bg-image);
 }
 
 .card__title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-variation-settings: "wght" var(--font-title, 700);
@@ -231,7 +198,7 @@ var(--bg-image);
 
 .text__content {
   color: var(--text-color, #000);
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-variation-settings: "wght" var(--font-content, 400);
@@ -241,13 +208,13 @@ var(--bg-image);
 .block__button {
   display: flex;
   align-self: flex-end;
-  padding-block-end: 20px;
+  padding-block-end: 19px;
   padding-inline-end: 23px;
   gap: 5px;
 }
 
 .card__like-button {
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -317,21 +284,25 @@ var(--bg-image);
 }
 
 /*Heart hover*/
-svg:hover .core {
+.like-icon:hover .core {
   fill: var(--core-hover, #000);
 }
 
-svg:hover .main-body {
+.like-icon:hover .main-body {
   fill: var(--body-hover, #000);
 }
 
 /*Heart active*/
-svg:active .core,
-svg:active .main-body {
+.like-icon:active .core,
+.like-icon:active .main-body {
   fill: var(--heart-active, #ff0000);
 }
 
 /*Heart animation*/
+.like-icon {
+  width: 39px;
+  height: 36px;
+}
 .like-icon.is-liked .core {
   fill: var(--heart-active, #ff0000);
   transition: core 0.3s;
@@ -365,7 +336,7 @@ svg:active .main-body {
 
 /*Dialog*/
 
-dialog {
+.dialog__form {
   transition: 0.3s ease-in;
   min-inline-size: 357px;
   min-block-size: 193px;
@@ -374,19 +345,21 @@ dialog {
   border-color: var(--border-color, #fff);
 }
 
-dialog::backdrop {
+.dialog__form::backdrop {
   opacity: 0.75;
   background: var(--backdrop, #000);
 }
 
-dialog:not([open]) {
+.dialog__form:not([open]) {
   pointer-events: none;
   opacity: 0;
 }
 
 .floppy_dialog {
   mix-blend-mode: difference;
-  scale: 175%;
+  scale: 145%;
+  width: 39px;
+  height: 39px;
   fill: var(--floppy_c, #fff);
 }
 
@@ -394,11 +367,12 @@ dialog:not([open]) {
   display: flex;
   align-items: center;
   gap: 15px;
+  padding-inline-start: 10px;
 }
 
 .dialog__title {
   color: var(--text-color, #000);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -417,7 +391,7 @@ dialog:not([open]) {
 
 /*Button dialog*/
 .dialog__button {
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -431,6 +405,7 @@ dialog:not([open]) {
   align-items: center;
   justify-content: center;
   margin-block-end: clamp(1rem, -0.9577rem + 8.3531vw, 6.56rem);
+  margin-block-start: 58px;
 }
 
 .dialog__button:focus-visible {
@@ -449,6 +424,8 @@ dialog:not([open]) {
 }
 
 .floppy_c {
+  width: 28px;
+  height: 28px;
   fill: var(--floppy_c, #fff);
   mix-blend-mode: difference;
 }
@@ -459,7 +436,6 @@ dialog:not([open]) {
 }
 
 /*Dialog button close*/
-
 .button_close {
   background-color: var(--bg-color, #fff);
   display: flex;
@@ -467,11 +443,11 @@ dialog:not([open]) {
   padding: 9px 17px;
   justify-content: center;
   align-items: center;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 90%; /* 12.6px */
+  line-height: 90%;
   text-transform: uppercase;
   border: 2px solid var(--border-color, #000);
   position: relative;
@@ -538,9 +514,11 @@ dialog:not([open]) {
   }
 
   .card__title {
-    padding-left: 10px;
-    padding-right: 10px;
-    min-height: 52px;
+    padding: 5px 10px 5px;
+  }
+
+  .main_section {
+    gap: 50px;
   }
 
   .lable {
@@ -561,6 +539,7 @@ dialog:not([open]) {
     height: 80px;
     flex-direction: column;
     gap: 8px;
+    margin-block-start: 51px;
   }
 
   .floppy_c {
