@@ -76,7 +76,7 @@ var(--bg-image);
   font-family: "Press Start 2P";
   font-size: clamp(3.065rem, 2.7129rem + 1.5023vw, 4.065rem);
   font-style: normal;
-  font-weight: 400;
+  font-variation-settings: "wght" 400;
   line-height: normal;
   text-transform: uppercase;
   display: flex;
@@ -89,7 +89,7 @@ var(--bg-image);
   font-family: "Press Start 2P";
   font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
   font-style: normal;
-  font-weight: 400;
+  font-variation-settings: "wght" 400;
   line-height: normal;
   text-transform: uppercase;
   display: flex;
@@ -185,20 +185,22 @@ var(--bg-image);
   position: relative;
 }
 
-.lable {
-  position: absolute;
-  right: 25px;
-  top: 25px;
-  -webkit-text-stroke: 0.5px var(--text-stroke, #fff);
-  color: var(--text-color, #000);
-  font-family: "Press Start 2P";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-  mix-blend-mode: hard-light;
-  opacity: 0.5;
+@supports (-webkit-text-stroke: 0.5px var(--text-stroke, #fff)) {
+  .lable {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    -webkit-text-stroke: 0.5px var(--text-stroke, #fff);
+    color: var(--text-color, #000);
+    font-family: "Press Start 2P";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+  }
 }
 
 .car {
@@ -212,7 +214,7 @@ var(--bg-image);
   font-family: "Inter";
   font-size: 18px;
   font-style: normal;
-  font-weight: var(--font-title, 700);
+  font-variation-settings: "wght" var(--font-title, 700);
   line-height: normal;
   min-height: 31px;
   display: flex;
@@ -232,7 +234,7 @@ var(--bg-image);
   font-family: "Inter";
   font-size: 18px;
   font-style: normal;
-  font-weight: var(--font-content, 400);
+  font-variation-settings: "wght" var(--font-content, 400);
   line-height: 21px;
 }
 
@@ -410,7 +412,7 @@ dialog:not([open]) {
   gap: 30px;
   display: flex;
   flex-direction: column;
-  padding: 27px 30px;
+  padding: 27px 27px;
 }
 
 /*Button dialog*/
