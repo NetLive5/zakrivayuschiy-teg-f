@@ -25,6 +25,7 @@
     opacity: 0;
   }
 }
+
 @keyframes heart-scale {
   0% {
     scale: 1;
