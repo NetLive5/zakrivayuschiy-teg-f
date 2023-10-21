@@ -99,7 +99,7 @@
   animation: arrow 1s linear infinite;
   position: absolute;
   left: -17px;
-  top: auto;
+  top: initial;
 }
 
 .theme-menu__button:disabled {
