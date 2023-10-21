@@ -500,7 +500,7 @@ dialog:not([open]) {
   box-shadow: 2px 2px 0px 0px var(--shadow, #000);
 }
 
-/*Images*/
+/*Images filter*/
 .start__sprint {
   filter: invert(1) brightness(200%) saturate(60%) hue-rotate(90deg);
 }
