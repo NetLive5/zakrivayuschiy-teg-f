@@ -269,8 +269,8 @@
   outline: none;
   border: 2px solid var(--border-color, #000);
 }
-/*Heart*/
 
+/*Heart*/
 .sparks {
   opacity: 0;
 }
@@ -337,7 +337,6 @@
 }
 
 /*Dialog*/
-
 .dialog__form {
   transition: 0.3s ease-in;
   min-inline-size: 357px;
