@@ -73,11 +73,14 @@
   padding-block-start: 7px;
 }
 
+.theme-menu__item {
+  position: relative;
+}
+
 .theme-menu__list {
   display: flex;
   gap: 7px;
   flex-direction: column;
-  position: relative;
 }
 
 .theme-menu__button {
@@ -98,8 +101,8 @@
   content: "▶";
   animation: arrow 1s linear infinite;
   position: absolute;
+  top: 1px;
   left: -17px;
-  top: initial;
 }
 
 .theme-menu__button:disabled {
@@ -550,7 +553,7 @@
     top: 4px;
   }
 
-  dialog {
+  .dialog__form {
     min-inline-size: 341px;
     min-block-size: 195px;
   }
