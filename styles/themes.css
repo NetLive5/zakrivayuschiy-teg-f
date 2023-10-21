@@ -1,6 +1,126 @@
 /* В этом файле вы опишете значения переменных в разных цветовых схемах.
 Придерживайтесь такого именования классов:
 ✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+✦ theme-light — класс светлой темы*/
+
+:root.theme-light {
+  --bg-image: url("../images/background-light.png");
+  --pixel-color: #d3d3d3;
+  --gradient-start: #e7e7e7;
+  --gradient-end: #1a1a1a;
+  --heart-active: #ff0000;
+  --header-size: clamp(1rem, -0.0792rem + 4.6047vw, 4.065rem);
+  --subtitle-size: clamp(1rem, 0.8458rem + 0.658vw, 1.438rem);
+  --bg-color: #fff;
+  --text-stroke: #fff;
+  --mix-mode: #fff;
+  --floppy_c: #fff;
+  --core-def: #fff;
+  --main-def: #fff;
+  --themes-main-color: #000;
+  --backdrop: #000;
+  --text-color: #000;
+  --contour: #000;
+  --header-focus: #000;
+  --border-color: #000;
+  --title-color: #000;
+  --shadow: #000;
+  --core-hover: #000;
+  --body-hover: #000;
+  --background-hover: #000;
+  --font-title: 700;
+  --font-content: 400;
+}
+
+:root.theme-dark {
+  --bg-image: url("../images/background-dark.png");
+  --pixel-color: #000;
+  --gradient-start: #007f0c;
+  --gradient-end: #004306;
+  --header-size: clamp(1rem, -0.0792rem + 4.6047vw, 4.065rem);
+  --subtitle-size: clamp(1rem, 0.8458rem + 0.658vw, 1.438rem);
+  --bg-color: #000;
+  --text-stroke: #000;
+  --mix-mode: #00cc14;
+  --core-def: #000;
+  --main-def: #000;
+  --heart-active: #ff0000;
+  --backdrop: #00cc14;
+  --themes-main-color: #000;
+  --text-color: #00cc14;
+  --contour: #00cc14;
+  --header-focus: #00cc14;
+  --border-color: #00cc14;
+  --title-color: #00cc14;
+  --shadow: #00cc14;
+  --floppy_c: #00cc14;
+  --core-hover: #00cc14;
+  --body-hover: #00cc14;
+  --background-hover: #00cc14;
+  --font-title: 785;
+  --font-content: 465;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url("../images/background-dark.png");
+    --pixel-color: #000;
+    --gradient-start: #007f0c;
+    --gradient-end: #004306;
+    --header-size: clamp(1rem, -0.0792rem + 4.6047vw, 4.065rem);
+    --subtitle-size: clamp(1rem, 0.8458rem + 0.658vw, 1.438rem);
+    --bg-color: #000;
+    --text-stroke: #000;
+    --themes-main-color: #000;
+    --core-def: #000;
+    --main-def: #000;
+    --heart-active: #ff0000;
+    --backdrop: #00cc14;
+    --mix-mode: #00cc14;
+    --text-color: #00cc14;
+    --contour: #00cc14;
+    --header-focus: #00cc14;
+    --border-color: #00cc14;
+    --title-color: #00cc14;
+    --shadow: #00cc14;
+    --floppy_c: #00cc14;
+    --core-hover: #00cc14;
+    --body-hover: #00cc14;
+    --background-hover: #00cc14;
+    --font-title: 785;
+    --font-content: 465;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/background-light.png");
+    --pixel-color: #d3d3d3;
+    --gradient-start: #e7e7e7;
+    --gradient-end: #1a1a1a;
+    --heart-active: #ff0000;
+    --header-size: clamp(1rem, -0.0792rem + 4.6047vw, 4.065rem);
+    --subtitle-size: clamp(1rem, 0.8458rem + 0.658vw, 1.438rem);
+    --bg-color: #fff;
+    --text-stroke: #fff;
+    --mix-mode: #fff;
+    --floppy_c: #fff;
+    --core-def: #fff;
+    --main-def: #fff;
+    --themes-main-color: #000;
+    --backdrop: #000;
+    --text-color: #000;
+    --contour: #000;
+    --header-focus: #000;
+    --border-color: #000;
+    --title-color: #000;
+    --shadow: #000;
+    --core-hover: #000;
+    --body-hover: #000;
+    --background-hover: #000;
+    --font-title: 700;
+    --font-content: 400;
+  }
+}
+/*✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */

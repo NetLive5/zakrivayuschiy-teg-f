@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-image: url("../images/background-light.png");
+  --pixel-color: #d3d3d3;
+  --gradient-start: #e7e7e7;
+  --gradient-end: #1a1a1a;
+  --heart-active: #ff0000;
+  --header-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --subtitle-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --bg-color: #fff;
+  --text-stroke: #fff;
+  --mix-mode: #fff;
+  --floppy_c: #fff;
+  --core-def: #fff;
+  --main-def: #fff;
+  --themes-main-color: #000;
+  --backdrop: #000;
+  --text-color: #000;
+  --contour: #000;
+  --header-focus: #000;
+  --border-color: #000;
+  --title-color: #000;
+  --shadow: #000;
+  --core-hover: #000;
+  --body-hover: #000;
+  --background-hover: #000;
+  --font-title: 700;
+  --font-content: 400;
+}
