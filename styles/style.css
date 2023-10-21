@@ -136,6 +136,7 @@
   background-color: var(--header-focus, #000);
   opacity: 0.6;
 }
+
 /*-------------------------------------------------------------------------*/
 .main_section {
   display: flex;
@@ -308,6 +309,7 @@
   width: 39px;
   height: 36px;
 }
+
 .like-icon.is-liked .core {
   fill: var(--heart-active, #ff0000);
   transition: core 0.3s;
