@@ -1,14 +1,14 @@
 @keyframes arrow {
   0% {
-    left: -14px;
+    transform: translateX(-3px);
   }
 
   50% {
-    left: -21px;
+    transform: translateX(3px);
   }
 
   100% {
-    left: -14px;
+    transform: translateX(-3px);
   }
 }
 

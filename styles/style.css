@@ -92,12 +92,14 @@
   background-color: transparent;
   cursor: pointer;
 }
-/**/
+
 .theme-menu__button:disabled::before {
   opacity: 0.6;
   content: "▶";
   animation: arrow 1s linear infinite;
   position: absolute;
+  left: -17px;
+  bottom: 5px;
 }
 
 .theme-menu__button:disabled {
@@ -188,11 +190,11 @@
   align-items: center;
   padding-left: 10px;
 }
+
 .card__block {
   display: flex;
   flex-direction: column;
   gap: 25px;
-
   padding: 29px 25px 25px 25px;
 }
 
